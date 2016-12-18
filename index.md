@@ -275,22 +275,7 @@ eesnäärme kartsinoom|eesnäärme spetsiifiline antigeen (PSA)|FLTPKKKLQCV, VIS
 - 24D3 lümfotsüütidega transplanteeritud hiirtes kasvab küll teine samasugune fibrosarkoom (CMS5, kõige parempoolne pilt) aga mitte Meth A (keskel).
 
 
-
-```
-## Error in FUN(X[[i]], ...): unable to open assets/img/proliferation_of_24D3_in_response-to_MethA.png
-```
-
-```
-## Error in lapply(a, rasterGrob): object 'a' not found
-```
-
-```
-## Error in is.grob(grobs): object 'a' not found
-```
-
-```
-## Error in grid.draw(b): object 'b' not found
-```
+![plot of chunk metha](assets/fig/metha-1.png)
 
 <footer class="source">T. Matsutake and P.K. Srivastava, 2001. PNAS98:3992-3997. The immunoprotective MHC II epitope of a chemically induced tumor harbors a unique mutation in a ribosomal protein. doi: 10.1073/pnas.071523398
 </footer>
