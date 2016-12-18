@@ -37,6 +37,7 @@ $(function() {
 
 
 
+
 --- .segue .dark .nobackground
 
 ## Immuunsus
@@ -135,19 +136,6 @@ Vasakul, MHC I; paremal, MHC II. Joonis: [PDB101](http://pdb101.rcsb.org/motm/62
 
 ***=left
 
-
-```r
-library(ggplot2)
-trans<-data.frame(Arv=c(13372,4954,2198,956,911,435,79,48),
-Organ=c("neer","maks","süda","kops",
-         "neer ja\nkõhunääre","kõhunääre","sool","süda ja\nkops"))
-ggplot(trans, aes(reorder(Organ,Arv), (Arv/sum(Arv))*100)) +
-         geom_bar(stat = "identity") + 
-  xlab("Transplanteeritud organ") + 
-  ylab("% transplantatsioonidest") +
-  ggtitle("Organ-spetsiifilised transplantatsioonid\nUSA-s 2000. aastal (N = 22,953 patsienti)")
-```
-
 ![plot of chunk organ](assets/fig/organ-1.png)
 ***=right
 
@@ -176,39 +164,6 @@ Lisaks:
 
 ----
 # Vähi intsidents organi transplantatsiooni patsientidel
-
-
-```r
-transplants <- read.table(
-textConnection("site, observed, expected
-'non melanoma skin', 127, 5.1
-'thyroid other endocrine', 30, 2.1
-'mouth tongue lip',22,1.6
-'cervix vulva vagina',39,3.6
-'non-Hodgkins lymphoma',25,2.4
-'kidney ureter',32,3.5
-'bladder',26,4.7
-'colorectal',38,10.5
-'lung',30,12.5
-'brain',10,4.1
-'prostate',11,5.2
-'melanoma',7,4.1
-'breast',15,13.6")
-, header = T, sep = ",")
-
-library(dplyr)
-transplants <- transplants %>% mutate(ratio = expected/observed)
-
-library(MASS)
-params <- fitdistr(transplants$ratio, densfun = "beta", start = list(shape1 = 0.8, shape2 = 2))$estimate
-
-trcan <- transplants %>% mutate(eb_ratio = (expected + params[1])/(observed + params[1] + params[2]),
-                       eb_increase = round(1/eb_ratio, 1)) %>% 
-  dplyr::select(site, observed, expected, eb_increase)
-library(knitr)
-kable(trcan, col.names = c("Site of cancer", "No. cases observed", "No. cases expected", "Ratio obs/exp (adj)"))
-```
-
 
 
 |Site of cancer          | No. cases observed| No. cases expected| Ratio obs/exp (adj)|
@@ -321,38 +276,16 @@ eesnäärme kartsinoom|eesnäärme spetsiifiline antigeen (PSA)|FLTPKKKLQCV, VIS
 
 
 
-```r
-library(gtable)
-library(grid)
-g <- gtable(widths = unit(rep(1,3),"null"), heights = unit(.5,"null"))
-library(png)
-a <- lapply(c("assets/img/proliferation_of_24D3_in_response-to_MethA.png",
-       "assets/img/MethA_growth_is_sensitive_to_24D3.png",
-       "assets/img/MethA_growth_is_not_sensitive_to_24D3.png"), readPNG)            
-```
-
 ```
 ## Error in FUN(X[[i]], ...): unable to open assets/img/proliferation_of_24D3_in_response-to_MethA.png
-```
-
-```r
-a <- lapply(a, rasterGrob)
 ```
 
 ```
 ## Error in lapply(a, rasterGrob): object 'a' not found
 ```
 
-```r
-b <- gtable_add_grob(g, a, t = c(1,1,1), l = c(1,2,3))
-```
-
 ```
 ## Error in is.grob(grobs): object 'a' not found
-```
-
-```r
-grid.draw(b)
 ```
 
 ```

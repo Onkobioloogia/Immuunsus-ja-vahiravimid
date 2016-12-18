@@ -239,18 +239,7 @@ $(function() {
 </ul>
 
 <div style='float:left;width:48%;' class='centered'>
-  <pre><code class="r">library(ggplot2)
-trans&lt;-data.frame(Arv=c(13372,4954,2198,956,911,435,79,48),
-Organ=c(&quot;neer&quot;,&quot;maks&quot;,&quot;süda&quot;,&quot;kops&quot;,
-         &quot;neer ja\nkõhunääre&quot;,&quot;kõhunääre&quot;,&quot;sool&quot;,&quot;süda ja\nkops&quot;))
-ggplot(trans, aes(reorder(Organ,Arv), (Arv/sum(Arv))*100)) +
-         geom_bar(stat = &quot;identity&quot;) + 
-  xlab(&quot;Transplanteeritud organ&quot;) + 
-  ylab(&quot;% transplantatsioonidest&quot;) +
-  ggtitle(&quot;Organ-spetsiifilised transplantatsioonid\nUSA-s 2000. aastal (N = 22,953 patsienti)&quot;)
-</code></pre>
-
-<p><img src="assets/fig/organ-1.png" alt="plot of chunk organ"></p>
+  <p><img src="assets/fig/organ-1.png" alt="plot of chunk organ"></p>
 
 </div>
 <div style='float:right;width:48%;'>
@@ -306,37 +295,7 @@ Lisaks:
     <h1>Vähi intsidents organi transplantatsiooni patsientidel</h1>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">transplants &lt;- read.table(
-textConnection(&quot;site, observed, expected
-&#39;non melanoma skin&#39;, 127, 5.1
-&#39;thyroid other endocrine&#39;, 30, 2.1
-&#39;mouth tongue lip&#39;,22,1.6
-&#39;cervix vulva vagina&#39;,39,3.6
-&#39;non-Hodgkins lymphoma&#39;,25,2.4
-&#39;kidney ureter&#39;,32,3.5
-&#39;bladder&#39;,26,4.7
-&#39;colorectal&#39;,38,10.5
-&#39;lung&#39;,30,12.5
-&#39;brain&#39;,10,4.1
-&#39;prostate&#39;,11,5.2
-&#39;melanoma&#39;,7,4.1
-&#39;breast&#39;,15,13.6&quot;)
-, header = T, sep = &quot;,&quot;)
-
-library(dplyr)
-transplants &lt;- transplants %&gt;% mutate(ratio = expected/observed)
-
-library(MASS)
-params &lt;- fitdistr(transplants$ratio, densfun = &quot;beta&quot;, start = list(shape1 = 0.8, shape2 = 2))$estimate
-
-trcan &lt;- transplants %&gt;% mutate(eb_ratio = (expected + params[1])/(observed + params[1] + params[2]),
-                       eb_increase = round(1/eb_ratio, 1)) %&gt;% 
-  dplyr::select(site, observed, expected, eb_increase)
-library(knitr)
-kable(trcan, col.names = c(&quot;Site of cancer&quot;, &quot;No. cases observed&quot;, &quot;No. cases expected&quot;, &quot;Ratio obs/exp (adj)&quot;))
-</code></pre>
-
-<table><thead>
+    <table><thead>
 <tr>
 <th align="left">Site of cancer</th>
 <th align="right">No. cases observed</th>
@@ -597,31 +556,13 @@ Shankaran et al., 2001.
 <li>24D3 lümfotsüütidega transplanteeritud hiirtes kasvab küll teine samasugune fibrosarkoom (CMS5, kõige parempoolne pilt) aga mitte Meth A (keskel).</li>
 </ul>
 
-<pre><code class="r">library(gtable)
-library(grid)
-g &lt;- gtable(widths = unit(rep(1,3),&quot;null&quot;), heights = unit(.5,&quot;null&quot;))
-library(png)
-a &lt;- lapply(c(&quot;assets/img/proliferation_of_24D3_in_response-to_MethA.png&quot;,
-       &quot;assets/img/MethA_growth_is_sensitive_to_24D3.png&quot;,
-       &quot;assets/img/MethA_growth_is_not_sensitive_to_24D3.png&quot;), readPNG)            
-</code></pre>
-
 <pre><code>## Error in FUN(X[[i]], ...): unable to open assets/img/proliferation_of_24D3_in_response-to_MethA.png
-</code></pre>
-
-<pre><code class="r">a &lt;- lapply(a, rasterGrob)
 </code></pre>
 
 <pre><code>## Error in lapply(a, rasterGrob): object &#39;a&#39; not found
 </code></pre>
 
-<pre><code class="r">b &lt;- gtable_add_grob(g, a, t = c(1,1,1), l = c(1,2,3))
-</code></pre>
-
 <pre><code>## Error in is.grob(grobs): object &#39;a&#39; not found
-</code></pre>
-
-<pre><code class="r">grid.draw(b)
 </code></pre>
 
 <pre><code>## Error in grid.draw(b): object &#39;b&#39; not found
