@@ -87,6 +87,25 @@ Vasakul, MHC I; paremal, MHC II. Joonis: [PDB101](http://pdb101.rcsb.org/motm/62
 ***=right
 ![MHC klass I](http://www.nature.com/nri/journal/v5/n5/images/nri1603-f1.jpg)
 
+----
+## Antikehad
+- Fc retseptoreid ekspresseerivad rakud - NK rakud ja makrofaagid seovad antikehadega kaetud raku ja tapavad selle
+- komplement seostub rakule seostunud antikehadele ja tapab raku muutes selle membraani poorseks 
+
+![ab-mediated-killing](assets/img/ab-mediated-killing.png)
+
+---
+## Tsütotoksilised T rakud
+
+<img src="http://www.nature.com/nri/journal/v10/n8/images/nri2803-f2.jpg" style="height:300px"/>
+
+<img src="http://faculty.southwest.tn.edu/rburkett/A&P2%20L44.jpg" style="height:250px"/>
+
+---
+## Regulatoorsed T rakud
+
+![Treg](http://www.nature.com/nri/journal/v11/n2/images/nri2916-f1.jpg)
+
 --- .segue .dark .nobackground
 
 ## Vähi immuunsus ja immuunoteraapia
