@@ -3,4 +3,4 @@ library(slidifyLibraries)
 
 slidify("index.Rmd")
 
-publish_github("tpall/immuunsus-ravim")
+publish_github("immuunsus-ravim","tpall")

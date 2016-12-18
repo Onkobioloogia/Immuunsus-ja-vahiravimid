@@ -79,6 +79,10 @@ opts_chunk$set(echo=FALSE, message=FALSE)
 **b**) Rakud millel MHC I puudub või    
 **c**) rakud mis ei presenteeri enda antigeeni lüüsitakse tsütotoksiliste rakkude poolt.
 
+<img src="https://cdn.rcsb.org/pdb101/motm/images/1hsa-1dlh.gif" style="width:340px"/>
+
+Vasakul, MHC I; paremal, MHC II. Joonis: [PDB101](http://pdb101.rcsb.org/motm/62).
+
 ***=right
 ![MHC klass I](http://www.nature.com/nri/journal/v5/n5/images/nri1603-f1.jpg)
 
