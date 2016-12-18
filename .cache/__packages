@@ -1,0 +1,11 @@
+base
+slidify
+slidifyLibraries
+ggplot2
+dplyr
+MASS
+knitr
+gtable
+png
+xml2
+rvest
