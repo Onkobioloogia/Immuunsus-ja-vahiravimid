@@ -468,6 +468,8 @@ Hayden, 2012.
 
 ## Molekulaarne profileerimine aitab määrata rinnavähi ravi
 
+- Low Risk - ~10% chance of recurrence = no statistical benefit from chemotherapy
+- High Risk - ~29% chance of recurrence = statistical benefit from chemotherapy
 
 ![her2](assets/img/Screenshot2015-12-2109:42:03.png)
 
