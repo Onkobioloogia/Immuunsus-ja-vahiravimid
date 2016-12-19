@@ -476,11 +476,20 @@ Hayden, 2012.
 <footer class="source">Pilt: L. van't Veer - [Genomic signatures of specific sites of metastases](http://www.slideshare.net/ESOSLIDES/l-veer-abclisbonmetasites).
 </footer>
 
----
+---&twocol
 
 ## Molekulaarne profileerimine
 # Difuusne suurerakuline lümfoom
 
+***=right
+
+- DLBCL subgroups arise from different stages of normal B cell differentiation, 
+- utilize distinct oncogenic mechanisms, and differ in their ability to be cured by chemotherapy. 
+- ABC DLBCL and PMBL depend upon constitutive activation of the NF-κB pathway for their survival but GCB DLBCL does not, 
+- NF-κB pathway is a potential therapeutic target for certain DLBCL subgroups.
+
+
+***=left
 ![blümfoom](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1351148/bin/nihms-5150-0001.jpg)
 
 <footer class="source">Pilt: The Biology of Human Lymphoid Malignancies Revealed by Gene Expression Profiling. Louis M. Staudt
@@ -618,6 +627,9 @@ myc või wnt | rinnanäärme adenokartsinoom jäi alles
     - blokeerivad hormoon-sõltuvate vähirakkude jagunemist ja põhjustavad vähirakkude surma (Lutron, Zytiga), 
 - Märklaud-ravimid,
     - inhibeerivad spetsiifilisi onkovalke, millest vähirakud on sõltuvad (*oncogene dependence*).
+- Immuunravi,
+    - immuun kontrollpunkt inhibiitorid *immune checkpoint inhibitors* (ipilimumab:a-CTLA4; pembolizumab: a-PD-L1)
+    (- modifitseeritud T rakud)
 
 ---
 
