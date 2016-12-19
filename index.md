@@ -440,7 +440,7 @@ Hayden, 2012.
 ## Esmased vähid ja 5 aasta suremus
 # Käärid vähi diagnoosimise ja eduka ravi vahel
 
-![suremus](http://www.sciencemag.org/content/vol331/issue6024/images/data/1540-a/DC1/331_1540a_F1.jpg)
+![suremus](assets/img/331_1540a_F1.jpg)
 
 <footer class="source">Pilt: Cancer Research and the $90 Billion Metaphor. Eliot Marshall, 
 <a href="http://www.sciencemag.org/content/331/6024/1540.1.full">2011</a>.
