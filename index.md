@@ -312,21 +312,30 @@ eesnäärme kartsinoom|eesnäärme spetsiifiline antigeen (PSA)|FLTPKKKLQCV, VIS
 # Inimese GI vähi mutatsioonide immunogeensus
 
 
-```
-## Error in open.connection(x, "rb"): HTTP error 403.
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'tdist' not found
-```
-
-```
-## Error in colnames(crc) <- c("ID", "Age/sex", "Tumor", "Mutated prot", : object 'crc' not found
-```
-
-```
-## Error in inherits(x, "list"): object 'crc' not found
-```
+|ID    |Age/sex |Tumor      |Mutated prot |Aa change |T cell type |% in tumor |
+|:-----|:-------|:----------|:------------|:---------|:-----------|:----------|
+|3737* |45/F    |Bile duct  |ERBB2IP      |E805G     |CD4         |0.009      |
+|      |        |           |             |E805G     |CD4         |0.375      |
+|3812  |44/M    |Bile duct  |—            |—         |—           |—          |
+|3942  |46/F    |Rectal     |NUP98        |A359D     |CD8         |0.67       |
+|      |        |           |KARS         |D356      |CD8         |0.020      |
+|      |        |           |GPD2         |E426K     |CD4         |0.037      |
+|3948  |48/M    |Esophageal |PLEC         |E1179K    |CD4         |NE         |
+|      |        |           |XPO7         |P274S     |CD4         |NE         |
+|      |        |           |AKAP2        |Q418K     |CD4         |NE         |
+|3971  |49/M    |Colon      |CASP8        |F67V      |CD8         |1.25       |
+|3978  |46/F    |Bile duct  |ITGB4        |S1002I    |CD4         |NE         |
+|3995  |50/M    |Colon      |TUBGCP2      |P293L     |CD8         |0.023      |
+|      |        |           |RNF213       |N1702S    |CD8         |0.60       |
+|      |        |           |KRAS         |G12D      |CD8         |0.055      |
+|4007  |52/M    |Colon      |SKIV2L       |R653H     |CD8         |0.090      |
+|      |        |           |             |R653H     |CD8         |0.014      |
+|      |        |           |H3F3B        |A48T      |CD8         |1.19       |
+|4032  |46/M    |Colon      |API5         |R243Q     |CD8         |0.083      |
+|      |        |           |             |R243Q     |CD8         |0.059      |
+|      |        |           |RNF10        |E572K     |CD8         |0.030      |
+|      |        |           |PHLPP1       |G566E     |CD8         |0.081      |
+|4069  |57/M    |Pancreatic |ZFYVE27      |R6H       |CD8         |0.088      |
 
 <footer class="source">Tabel: Mutation-reactive T cells in metastatic GI cancers [Tran, et al., (2015)](http://www.sciencemag.org/content/350/6266/1387/T1.expansion.html) Immunogenicity of somatic mutations in human gastrointestinal cancers. Science 11 December 2015: Vol. 350 no. 6266 pp. 1387-1390
 </footer>
