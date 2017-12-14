@@ -85,7 +85,7 @@ knitr::include_graphics("http://www.nature.com/nri/journal/v5/n5/images/nri1603-
 - komplement seostub rakule seostunud antikehadele ja tapab raku muutes selle membraani poorseks 
 
 ```{r}
-knitr::include_graphics("figure/ab-mediated-killing.png")
+knitr::include_graphics("figures/ab-mediated-killing.png")
 ```
 
 ---
@@ -367,9 +367,9 @@ library(gtable)
 library(grid)
 g <- gtable(widths = unit(rep(1,3),"null"), heights = unit(.5,"null"))
 library(png)
-a <- lapply(c("figure/proliferation_of_24D3_in_response-to_MethA.png",
-       "figure/MethA_growth_is_sensitive_to_24D3.png",
-       "figure/MethA_growth_is_not_sensitive_to_24D3.png"), readPNG)            
+a <- lapply(c("figures/proliferation_of_24D3_in_response-to_MethA.png",
+       "figures/MethA_growth_is_sensitive_to_24D3.png",
+       "figures/MethA_growth_is_not_sensitive_to_24D3.png"), readPNG)            
 a <- lapply(a, rasterGrob)
 b <- gtable_add_grob(g, a, t = c(1, 1, 1), l = c(1, 2, 3))
 grid.draw(b)
@@ -562,7 +562,7 @@ Vähi suremus peegeldab ravi efektiivsust
 Käärid vähi diagnoosimise ja eduka ravi vahel
 
 ```{r}
-knitr::include_graphics("figure/331_1540a_F1.jpg")
+knitr::include_graphics("figures/331_1540a_F1.jpg")
 ```
 
 .footer[
@@ -601,7 +601,7 @@ Pilt: [PSA screening has also significantly impacted prostate cancer mortality](
 - High Risk - ~29% chance of recurrence = statistical benefit from chemotherapy
 
 ```{r}
-knitr::include_graphics("figure/Screenshot2015-12-2109:42:03.png")
+knitr::include_graphics("figures/Screenshot2015-12-2109:42:03.png")
 ```
 
 .footer[
@@ -672,7 +672,7 @@ Pilt: 12-AAG (tanespimycin) indutseeritud mitoosikatastroof rinnavähi rakuliini
     - all-trans-retinoolhape põhjustab diferentsatsiooni geene represseeriva PML-RAR valgu ubikvitineerimise ja proteasoomse lagundamise.
 
 ```{r}
-knitr::include_graphics("figure/apl.png")
+knitr::include_graphics("figures/apl.png")
 ```
 
 .footer[
@@ -688,7 +688,7 @@ Pildid: image.bloodline.net, wikipedia.
 - Onkogeenid ja neile signaalirajas järgnevad geenid on potentsiaalsed ravimimärklauad.
 
 ```{r}
-knitr::include_graphics("figure/targeted-therapy.png")
+knitr::include_graphics("figures/targeted-therapy.png")
 ```
 
 .footer[
@@ -703,7 +703,7 @@ Pilt: [nature.com](http://www.nature.com/nrc/journal/v13/n10/fig_tab/nrc3599_F4.
 - PRIMA-modifitseeritud p53 omandab uuesti tuumorsupressor aktiivsuse põhjustab rakkude apoptoosi.
 
 ```{r}
-knitr::include_graphics("figure/prima1.png")
+knitr::include_graphics("figures/prima1.png")
 ```
 
 .footer[
@@ -840,7 +840,7 @@ Keskmiselt 1 valk 5 sobib
 
 
 ```{r}
-knitr::include_graphics("figure/ICG001.png")
+knitr::include_graphics("figures/ICG001.png")
 ```
 
 .footer[
