@@ -626,7 +626,7 @@ Pilt: L. van't Veer -- [Genomic signatures of specific sites of metastases](http
 Difuusne suurerakuline lümfoom
 
 .pull-left[
-```{r}
+```{r, out.width='90%'}
 knitr::include_graphics("http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1351148/bin/nihms-5150-0001.jpg")
 ```
 ]
