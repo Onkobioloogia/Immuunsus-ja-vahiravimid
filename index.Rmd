@@ -775,10 +775,10 @@ Pilt: B-raf ja vemurafenib kompleks. PDBid: <a href="http://www.pdb.org/pdb/expl
 
 ---
 
-### Eksperimentaalsed näited onkogeen sõltuvusest
+## Eksperimentaalsed näited onkogeen sõltuvusest
 
-Transgeenne onkogeen | vähi vastus
---------------------|------------
+```{r}
+tab <- readr::read_delim("Transgeenne onkogeen | vähi vastus
 Vähi täielik regressioon peale transgeeni 'välja lülitamist' |
 H-ras | melanoom kollapseerus
 K-ras | kopsu adenokartsinoomi regressioon
@@ -789,7 +789,10 @@ SV40 LT | süljenäärme hüperplaasia regresseerus, kui transgeeni ekspresseeri
 Vähk jäi alles või relapseerus peale transgeeni 'välja lülitamist' |
 SV40 LT | süljenäärme hüperplaasia tuli tagasi, kui transgeeni ekspresseeriti >4 kuud
 neu | rinnanäärme adenokartsinoom relapseerus
-myc või wnt | rinnanäärme adenokartsinoom jäi alles
+myc või wnt | rinnanäärme adenokartsinoom jäi alles", delim = "|")
+tab <- knitr::kable(tab, format = 'html')
+kableExtra::kable_styling(tab, "striped", position = "left", font_size = 12)
+```
 
 ---
 
@@ -825,7 +828,7 @@ myc või wnt | rinnanäärme adenokartsinoom jäi alles
 ## Ravimimärklauaks sobivad valgud/*druggable targets*
 
 .pull-left[
-- Valku loetakse sobivaks ravimi märklauaks kui ta omab identifitseeritavat **ensümaatilist aktiivsust** ja defineeritud  **katalüütiline sait** (*catalytic cleft*).
+- Valku loetakse sobivaks ravimi märklauaks kui ta omab identifitseeritavat **ensümaatilist aktiivsust** ja tal on defineeritud **katalüütiline sait** (*catalytic cleft*).
 - Katalüütilisse lõhesse on võimalik seostada suhteliselt madalmolekulaarne (<1000Da) ühend. 
 - Mitmed mittekovalentsed sidemed mis sellise madalmolekulaarse ühendi seostumisel moodustuvad, võimaldavad saavutada ravimi **kõrge spetsiifilisuse** ja **aviidsuse** (~mitmete kontaktide afiinsuste summa)  
 ]
@@ -990,10 +993,10 @@ knitr::include_graphics("http://www.thejgo.org/article/viewFile/1285/html/7172")
 
 ---
 
-### 'Top 10 best-sellerit' vähiravimite hulgas 2013 (maailmas)
+## 'Top 10 best-sellerit' vähiravimite hulgas 2013 (maailmas)
 
-Bränd | näidustus | märklaud | tüüp | müük | firma
------| --------- |----------|------|----------------| ------
+```{r}
+tab <- readr::read_delim("Bränd | näidustus | märklaud | tüüp | müük | firma
 Rituxan | mitte-Hodgkini lümfoom, CLL | CD20 | antikeha |$7.78B | Roche 
 Avastin | kolorektaal-, kopsu-, munasarja- ja ajuvähk | VEGF | antikeha | $6.75B | Roche
 Herceptin| rinna-, mao- ja söögitoru vähk | HER2/neu | antikeha | $6.56B | Roche
@@ -1003,7 +1006,10 @@ Velcade |  multi müeloom | valkude lagundamine | proteasoomi inhibiitor | $2.6B
 Erbitux | käärsoole ja pea-kaela vähk | EGFR |antikeha | $1.87B |  Merck, BMS 
 Lupron | eesnäärme ja munasarja vähk | gonatotropiin | hormoonravim | $1.73B |AbbVie, Sanofi
 Zytiga | eesnäärme vähk | androgeen | hormoonravim | $1.7B | J&J
-Revlimid | multi müeloom, mantelrakk lümfoom | ? | kemoterapeutikum | $1.09B | Celgene
+Revlimid | multi müeloom, mantelrakk lümfoom | ? | kemoterapeutikum | $1.09B | Celgene", delim = "|")
+tab <- knitr::kable(tab, format = 'html')
+kableExtra::kable_styling(tab, "striped", position = "left", font_size = 12)
+```
 
 ---
 class:inverse, middle, center
