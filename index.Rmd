@@ -652,20 +652,25 @@ DLBCL, Diffuse Large B-Cell Lymphoma; PMBL, Primary Mediastinal B-Cell Lymphoma;
 Molekulaarne profileerimine annab ka infot selle kohta kas vähk on mingile kindlale märklaud ravile tundlik
 
 - Mitte-väikserakuline kopsuvähk, EGFR mutatsioonid määravad tundlikkuse türosiin kinaasi inhibiitoritele (iressa)
+
 - GI strooma vähk, KIT ja PDGFRA mutatsioonid määravad tundlikkuse c-KIT ja PDGFR inhibiitoritele (imatinib)
+
 - metastaatiline soolevähk, mutantne KRAS ennustab mitte-tundlikkuse anti-EGFR antikehadele.
+
 - melanoom, BRAF mutatsioonid mutatsioonid määravad tundlikkuse spetsiifilistele inhibiitoritele (vemurafenib)
-- rinnavähk, HER2 amplifikatsioon ennustab tundlikkust anti-HER2 teraapiale.
+
+- rinnavähk, HER2 amplifikatsioon ennustab tundlikkust anti-HER2 teraapiale
 
 ---
 
 ## Vähiravi strateegiad
 Surm/apoptoos vs diferentseerumine
 
-- Enamus mittekirurgilise vähiravi strateegiatest põhineb sellel, et ravi tagajärjel **vähirakud lähevad apoptoosi**.
-- Alternatiiviks on vähirakkude **diferentseeruma suunamine** nii, et nad muutuksid post-mitootilisteks.
+- Enamus mittekirurgilise vähiravi strateegiatest põhineb sellel, et ravi tagajärjel **vähirakud lähevad apoptoosi**
 
-```{r}
+- Alternatiiviks on vähirakkude **diferentseeruma suunamine** nii, et nad muutuksid post-mitootilisteks
+
+```{r, out.width='55%'}
 knitr::include_graphics("http://mct.aacrjournals.org/content/7/8/2358/F5.large.jpg")
 ```
 
@@ -678,9 +683,9 @@ Pilt: 12-AAG (tanespimycin) indutseeritud mitoosikatastroof rinnavähi rakuliini
 
 ## Äge promüelotsüütne leukeemia
 
- - APL iseloomustab ebanormaalne mitte-küpsete granulotsüütide akumulatsioon ja on seotud retinoolhappe retseptori (RARα) translokatsiooniga (t(15;17)(q22;q12); PML-RAR).
-    - Algselt fataalne haigus (kirjeldati 1957) on hästi ravitav **all-trans-retinoolhappega** mis diferentseerib need vähirakud neutrofiilideks.
-    - all-trans-retinoolhape põhjustab diferentsatsiooni geene represseeriva PML-RAR valgu ubikvitineerimise ja proteasoomse lagundamise.
+ - APL iseloomustab ebanormaalne mitte-küpsete granulotsüütide akumulatsioon ja on seotud retinoolhappe retseptori (RARα) translokatsiooniga (t(15;17)(q22;q12); PML-RAR)
+    - Algselt fataalne haigus (kirjeldati 1957) on hästi ravitav **all-trans-retinoolhappega** mis diferentseerib need vähirakud neutrofiilideks
+    - all-trans-retinoolhape põhjustab diferentsatsiooni geene represseeriva PML-RAR valgu ubikvitineerimise ja proteasoomse lagundamise
 
 ```{r}
 knitr::include_graphics("figures/apl.png")
@@ -694,9 +699,11 @@ Pildid: image.bloodline.net, wikipedia.
 
 ## Ainult osa vähi valkudest sobivad ravimimärklauaks
 
-- **Madalmolekulaarsed ühendid omavad peamiselt inhibeerivat toimet** valkudele millele nad seostuvad.
-- Reeglina, tuumorsuppressorid ja genoomi korrashoiu eest vastutavad valgud ei sobi seega otseseks ravimi märklauaks: nende funktsiooni on vähirakkudes praktiliselt võimatu taastada.
-- Onkogeenid ja neile signaalirajas järgnevad geenid on potentsiaalsed ravimimärklauad.
+- **Madalmolekulaarsed ühendid omavad peamiselt inhibeerivat toimet** valkudele millele nad seostuvad
+
+- Reeglina, tuumorsuppressorid ja genoomi korrashoiu eest vastutavad valgud ei sobi seega otseseks ravimi märklauaks: nende funktsiooni on vähirakkudes praktiliselt võimatu taastada
+
+- Onkogeenid ja neile signaalirajas järgnevad geenid on potentsiaalsed ravimimärklauad
 
 ```{r}
 knitr::include_graphics("figures/targeted-therapy.png")
@@ -710,8 +717,9 @@ Pilt: [nature.com](http://www.nature.com/nrc/journal/v13/n10/fig_tab/nrc3599_F4.
 
 ## TP53 on siiski võimalik reaktiveerida
 
-- **PRIMA-1** reageerib mutantse p53 tioolrühmadega ja moodustab kovalentse sideme. 
-- PRIMA-modifitseeritud p53 omandab uuesti tuumorsupressor aktiivsuse põhjustab rakkude apoptoosi.
+- **PRIMA-1** reageerib mutantse p53 tioolrühmadega ja moodustab kovalentse sideme
+
+- PRIMA-modifitseeritud p53 omandab uuesti tuumorsupressor aktiivsuse põhjustab rakkude apoptoosi
 
 ```{r}
 knitr::include_graphics("figures/prima1.png")
@@ -727,8 +735,9 @@ Pilt: Lambert et al.,
 
 ## TP53 reaktivatsioon
 
-- **Nutlin-2**: Metsik tüüpi p53 assotseerub vähis tavaliselt MDM2 üle-ekspressiooniga. Sellistes kasvajates on võimalik blokeerida MDM2 seostumine p53 (Joonisel **b**).
-- **PhiKan083**: p53 Y220C mutantset valku on ka võimalik reaktiveerida - PhiKan083 seostumine taastab p53 normaalse konformatsiooni (Joonisel **c,d**).
+- **Nutlin-2**: Metsik tüüpi p53 assotseerub vähis tavaliselt MDM2 üle-ekspressiooniga. Sellistes kasvajates on võimalik blokeerida MDM2 seostumine p53 (Joonisel **b**)
+
+- **PhiKan083**: p53 Y220C mutantset valku on ka võimalik reaktiveerida - PhiKan083 seostumine taastab p53 normaalse konformatsiooni (Joonisel **c,d**)
 
 ```{r}
 knitr::include_graphics("http://www.nature.com/nrc/journal/v9/n12/images/nrc2763-f3.jpg")
@@ -744,19 +753,19 @@ Pilt: Brown et al.,
 
 ## Onkogeen sõltuvus
 
-- 'Onkogeen sõltuvus' ([*oncogene addiction*](http://carcin.oxfordjournals.org/content/21/5/857.abstract?ijkey=a8731bb91ca8497327c79918f8012a574b2a93b5&keytype2=tf_ipsecsha)): vaatamata tumorigeneesi käigus vähirakku akumuleerunud mitmete onkogeensetele mutatsioonidele, on vähirakk sõltuv kindla onkogeense valgu/raja aktivatsioonist.
+> 'Onkogeen sõltuvus' ([*oncogene addiction*](http://carcin.oxfordjournals.org/content/21/5/857.abstract?ijkey=a8731bb91ca8497327c79918f8012a574b2a93b5&keytype2=tf_ipsecsha)): vaatamata tumorigeneesi käigus vähirakku akumuleerunud mitmete onkogeensetele mutatsioonidele, on vähirakk sõltuv kindla onkogeense valgu/raja aktivatsioonist.
 
 ---
 
 ## Onkogeen sõltuvus
 
-- Kui see kriitiline onkogeenne rada 'kinni panna' siis vähk kollapseerub: 
+- Kui kriitiline onkogeenne rada vähis 'kinni panna' siis vähk kollapseerub: 
     - BCR-ABL fuusionvalk kroonilises müelotsüütses leukeemias on tundlik imatinib-le,
     - HER2 on amplifitseerunud 25-30% rinnavähkides mis muudab need tundlikuks HER2-antikehadele (trastuzumab) ja inhibiitoritele (lapatinib),
     - EGFR 10-20% mitte-väikserakulised kopsuvähid sisaldavad aktiveerivaid mutatsioone kinaasses domäänis ja on tundlikud inhibiitoritele gefitinib ja erlotinib-ile,
     - BRAF V600E mutatsioon on 70% melanoomides, 40% kilpnäärmevähkides ja 20% mCRC mis muudab need tundlikuks nt. vemurafenib-ile.
 
-```{r}
+```{r, out.width='40%'}
 knitr::include_graphics("http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/3OG7.png/1024px-3OG7.png")
 ```
 
