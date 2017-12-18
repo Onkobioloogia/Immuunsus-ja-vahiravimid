@@ -29,14 +29,17 @@ knitr::include_graphics("http://intranet.tdmu.edu.ua/data/kafedra/internal/patol
 ---
 ## NK rakud ja makrofaagid
 
-```{r}
-knitr::include_graphics("http://course1.winona.edu/kbates/Immunology/images/figure_09_41.jpg")
+.pull-left[
+```{r, out.width='110%'}
+knitr::include_graphics("figures/Natural-killer-cell-recognition-of-target-cellsNatural-killer-NK-cell.png.jpeg")
 ```
+]
 
+.pull-right[
 ```{r}
-knitr::include_graphics("http://course1.winona.edu/kbates/Immunology/images/figure_09_43.jpg")
+knitr::include_graphics("figures/macrophages_X2604-M-02.png")
 ```
-
+]
 ---
 
 ## T rakud
@@ -63,7 +66,8 @@ Pilt: [khanacademy.org](https://www.khanacademy.org/test-prep/mcat/organ-systems
 **b**) Rakud millel MHC I puudub või    
 **c**) rakud mis ei presenteeri enda antigeeni lüüsitakse tsütotoksiliste rakkude poolt.
 
-```{r}\knitr::include_graphics("https://cdn.rcsb.org/pdb101/motm/images/1hsa-1dlh.gif")
+```{r}
+knitr::include_graphics("https://cdn.rcsb.org/pdb101/motm/images/1hsa-1dlh.gif")
 ```
 
 Vasakul, MHC I; paremal, MHC II. Joonis: [PDB101](http://pdb101.rcsb.org/motm/62).
@@ -85,7 +89,7 @@ knitr::include_graphics("http://www.nature.com/nri/journal/v5/n5/images/nri1603-
 - Fc retseptoreid ekspresseerivad rakud - NK rakud ja makrofaagid seovad antikehadega kaetud raku ja tapavad selle
 - komplement seostub rakule seostunud antikehadele ja tapab raku muutes selle membraani poorseks 
 
-```{r}
+```{r, out.width='60%'}
 knitr::include_graphics("figures/ab-mediated-killing.png")
 ```
 
@@ -97,7 +101,7 @@ knitr::include_graphics("figures/ab-mediated-killing.png")
 knitr::include_graphics("http://www.nature.com/nri/journal/v10/n8/images/nri2803-f2.jpg")
 ```
 
-```{r}
+```{r, out.width='50%'}
 knitr::include_graphics("http://faculty.southwest.tn.edu/rburkett/A&P2%20L44.jpg")
 ```
 
@@ -123,7 +127,7 @@ class:inverse, middle, center
 
 .pull-left[
 
-```{r}
+```{r, out.width='50%'}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Paul_Ehrlich_1915.jpg/800px-Paul_Ehrlich_1915.jpg")
 ```
 
@@ -131,7 +135,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/0/
 
 .pull-right[
 
-```{r}
+```{r, out.width='50%'}
 knitr::include_graphics("http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Frank_Macfarlane_Burnet.jpg/800px-Frank_Macfarlane_Burnet.jpg")
 ```
 ]
@@ -158,21 +162,24 @@ Pilt:["Allogeneic IgG combined with dendritic cell stimuli induce antitumour T-c
 ## Vähi immuunokujundamine
 *Cancer immunoediting*
 
-- Alternatiivseks hüpoteesiks vähirakkude ja immuunsüsteemi interaktsioonide kirjeldamiseks on **vähi immuunokujundamise**.
-- Vähi **täielik elimineerimine immuunsüsteemi poolt** on immuunokujundamise üks stsenaarium. 
-- Teine stsenaarium on **immuunsüsteemi poolt kujundatud vähirakkude** repertuaari esiletõus. 
+- Vähi **täielik elimineerimine immuunsüsteemi poolt** on immuunokujundamise üks stsenaarium
+
+- Teine stsenaarium on **immuunsüsteemi poolt kujundatud vähirakkude** repertuaari esiletõus
+
 - Immuunsüsteemiga kohandunud vähirakud on kas 
   - **vähem immuunogeneesed**,
-  - suurenenud **võimega inhibeerida vähivastast immuunvastust**.
+  - suurenenud **võimega inhibeerida vähivastast immuunvastust**
 
 ---
 
 ## Vähi immuunoseire/-kujundamine
 Vähi immuunoseire või -kujundamise toimimisele inimeses viitavad
 
-- Kõrgem vähi intsidents immuunosupressiivset ravi saavatel organi transplantatsiooni läbinud patsientidel.
-- Vähipatsientidel tekib oma vähi vastu immuunvastus.
-- Vähisiseste tsütotoksiliste (CD8+) ja immuun-protektiivsete regulatoorsete (CD25+Foxp3+) T rakkude lokalisatsioon.
+- Kõrgem vähi intsidents immuunosupressiivset ravi saavatel organi transplantatsiooni läbinud patsientidel
+
+- Vähipatsientidel tekib oma vähi vastu immuunvastus
+
+- Vähisiseste tsütotoksiliste (CD8+) ja immuun-protektiivsete regulatoorsete (CD25+Foxp3+) T rakkude lokalisatsioon
 
 ---
 
@@ -182,7 +189,7 @@ Vähi immuunoseire või -kujundamise toimimisele inimeses viitavad
 
 .pull-left[
 
-```{r organ}
+```{r, out.width='100%'}
 trans <- data.frame(Arv = c(13372, 4954, 2198, 956, 911, 435, 79, 48),
                     Organ = c("neer", "maks", "süda", "kops", "neer ja\nkõhunääre", "kõhunääre", "sool", "süda ja\nkops"))
 ggplot(trans, aes(reorder(Organ,Arv), (Arv/sum(Arv)) * 100)) +
@@ -196,15 +203,17 @@ ggplot(trans, aes(reorder(Organ,Arv), (Arv/sum(Arv)) * 100)) +
 .pull-right[
 
 
-Nahavähi populatsioon-standardiseeritud intsidents organi transplantatsiooni patsientidel (Norra ja Holland).
-
-Nahavähk | intsidentsi kasv
---------|-----------------
+```{r}
+tab <- readr::read_delim("Nahavähk | Intsidentsi kasv
 SCC	| 65-korda
 huule SCC |	20-korda
 BCC	| 10-korda
 melanoom |	3.4-korda
-Kapoosi sarkoom |	84-korda
+Kapoosi sarkoom |	84-korda", delim = "|")
+tab <- knitr::kable(tab, format = 'html', caption = "Nahavähi populatsioon-standardiseeritud intsidents organi transplantatsiooni patsientidel (Norra ja Holland).")
+kableExtra::kable_styling(tab, "striped", position = "left", font_size = 12)
+```
+
 
 ]
 
@@ -225,35 +234,36 @@ Lisaks:
 
 ## Vähi intsidents organi transplantatsiooni patsientidel
 
-```{r cancer_immunosuppressed_pts}
-transplants <- read.table(
-textConnection("site, observed, expected
-'non melanoma skin', 127, 5.1
-'thyroid other endocrine', 30, 2.1
-'mouth tongue lip',22,1.6
-'cervix vulva vagina',39,3.6
-'non-Hodgkins lymphoma',25,2.4
-'kidney ureter',32,3.5
-'bladder',26,4.7
-'colorectal',38,10.5
-'lung',30,12.5
-'brain',10,4.1
-'prostate',11,5.2
-'melanoma',7,4.1
-'breast',15,13.6")
-, header = T, sep = ",")
+```{r}
+transplants <- readr::read_delim("site,observed,expected
+non melanoma skin, 127, 5.1
+thyroid other endocrine, 30, 2.1
+mouth tongue lip,22,1.6
+cervix vulva vagina,39,3.6
+non-Hodgkins lymphoma,25,2.4
+kidney ureter,32,3.5
+bladder,26,4.7
+colorectal,38,10.5
+lung,30,12.5
+brain,10,4.1
+prostate,11,5.2
+melanoma,7,4.1
+breast,15,13.6", delim = ",")
 
-transplants <- transplants %>% mutate(ratio = expected/observed)
+transplants <- transplants %>% 
+  mutate_at(2:3, as.numeric) %>% 
+  mutate(ratio = expected / observed)
 
-library(MASS)
-params <- fitdistr(transplants$ratio, densfun = "beta", start = list(shape1 = 0.8, shape2 = 2))$estimate
+params <- MASS::fitdistr(transplants$ratio, densfun = "beta", start = list(shape1 = 0.8, shape2 = 2))$estimate
 
-trcan <- transplants %>% mutate(eb_ratio = (expected + params[1])/(observed + params[1] + params[2]),
-                       eb_increase = round(1/eb_ratio, 1)) %>% 
+trcan <- transplants %>% 
+  mutate(eb_ratio = (expected + params[1])/(observed + params[1] + params[2]),
+         eb_increase = round(1/eb_ratio, 1)) %>% 
   dplyr::select(site, observed, expected, eb_increase)
-library(knitr)
-kable(trcan, col.names = c("Site of cancer", "No. cases observed", "No. cases expected", "Ratio obs/exp (adj)"))
+tab <- knitr::kable(trcan, format = 'html', col.names = c("Site of cancer", "No. cases observed", "No. cases expected", "Ratio obs/exp (adj)"))
+kableExtra::kable_styling(tab, "striped", position = "left", font_size = 12)
 ```
+
 
 .footer[
 Tabel: [Peto, J (2001)](http://www.nature.com/nature/journal/v411/n6835/full/411390a0.html). Cancer epidemiology in the last century and the next decade. Nature, 411, 6835:390-5.
@@ -289,7 +299,7 @@ Shankaran et al., 2001.
 
 ---
 
-# Vähid mis tekivad hiires kellel puuduvad lümfotsüüdid on immunogeensemad
+### Vähid mis tekivad hiires kellel puuduvad lümfotsüüdid on immunogeensemad
 
 .pull-left[
 
@@ -304,50 +314,58 @@ Shankaran et al., 2001.
 ```{r}
 knitr::include_graphics("http://www.nature.com/nature/journal/v410/n6832/images/4101107ac.2.jpg")
 ```
-]
 
-.footer[Pilt: IFNbig gamma and lymphocytes prevent primary tumour development and shape tumour immunogenicity.
+.footer[Pilt: IFN-g and lymphocytes prevent primary tumour development and shape tumour immunogenicity.
 <a href="http://www.nature.com/nature/journal/v410/n6832/full/4101107a0.html">
 Shankaran et al., 2001.
 </a>
 
 ]
-
+]
 
 ---
 
 ## Kas rakulised onkogeenid on immunogeensed?
 
-- Mutantsete vähi ja normaalsete valkude erinevused on väikesed: RAS, TP53, BCR-ABL.
-- Trioosfosfaat isomeraas (glükolüüsi rada) on mitmetes vähkides immunogeenne.
-- Mutantse RAS valgu struktuur ei ole muutunud (nt. KRASG12V vs. wt KRAS), madal immunogeensus ja lisaks on onkogeensed RAS valgud madalalt ekspresseeritud.
+- Mutantsete vähi ja normaalsete valkude erinevused on väikesed: RAS, TP53, BCR-ABL
+
+- Trioosfosfaat isomeraas (glükolüüsi rada) on mitmetes vähkides immunogeenne
+
+- Mutantse RAS valgu struktuur ei ole muutunud (nt. KRASG12V vs. wt KRAS), madal immunogeensus ja lisaks on onkogeensed RAS valgud madalalt ekspresseeritud
 
 ---
 
 ## Vähis võib tekkida immuunvastus kõrgelt ekspresseeritud valkude vastu
 
-- hTERT on üleekspresseeritud 70-80% vähkides. Maksakartsinoomi patsientidel hTERT-vastased antikehad veres. Nende antikehade roll progressioonis ebaselge.
-- HER2/neu positiivsed rinnakartsinoomid, seal 10-20x üleekspressioon (trastuzumab).
-- GD3 gangliosiid (siaalhapet sisaldav glükosfingolipiid) on mitmetes vähkides (melanoon sh.) üle ekspresseeritud.
+- hTERT on üleekspresseeritud 70-80% vähkides. Maksakartsinoomi patsientidel hTERT-vastased antikehad veres. Nende antikehade roll progressioonis ebaselge
+
+- HER2/neu positiivsed rinnakartsinoomid, seal 10-20x üleekspressioon (trastuzumab)
+
+- GD3 gangliosiid (siaalhapet sisaldav glükosfingolipiid) on mitmetes vähkides (melanoon sh.) üle ekspresseeritud
 
 ---
 ## Vähi antigeenid
 
-1. TSTA - *tumor specific transplantation antigens (TA)* strukturaalselt uudsed, kindla vähi või vähitüübiga seotud antigeenid mida ei esine normaalsetes kudedes.
-2. TATA/TAA - *tumor associated TA* -- vähis ekspresseeritud normaalsed valgud mille suhtes pole mingil põhjusel täielikku tolerantsust tekkinud.
+1. TSTA - *tumor specific transplantation antigens (TA)* strukturaalselt uudsed, kindla vähi või vähitüübiga seotud antigeenid mida ei esine normaalsetes kudedes
+
+2. TATA/TAA - *tumor associated TA* -- vähis ekspresseeritud normaalsed valgud mille suhtes pole mingil põhjusel täielikku tolerantsust tekkinud
 
 ---
+## Näiteid vähi antigeenidest
 
-Vähitüüp|Valk|Antigenne peptiid
--------|----|-----------------
+
+```{r}
+tab <- readr::read_delim("Vähitüüp|Valk|Antigenne peptiid
 melanoom, suuõõne kartsinoom, maksa kartsinoom, mitte-väikserakuline kopsuvähk|MAGE|EADPTGHSY, SAYGEPRKL
 melanoom|türosinaas|MLLAVLYCL, YMNGTMSQV
 käärsoole kartsinoom|kartsino-embrüonaalne antigeen (CEA)|YLSGANLNL
 rinna- ja munasarja kartsinoomid|HER2/neu|KIFGSLAFL
 pea-kaela kartsinoom|kaspaas 8|FPSDWCYF
 krooniline müelogeenne leukeemia (CML)|BCR-ABL|ATGFKQSSKALQRPVAS
-eesnäärme kartsinoom|eesnäärme spetsiifiline antigeen (PSA)|FLTPKKKLQCV, VISNDVCAQV
-
+eesnäärme kartsinoom|eesnäärme spetsiifiline antigeen (PSA)|FLTPKKKLQCV, VISNDVCAQV", delim = "|")
+tab <- knitr::kable(tab, format = 'html')
+kableExtra::kable_styling(tab, "striped", position = "left", font_size = 12)
+```
 
 .footer[
 Tabel: R.A. Goldsby et al., Immunology, 5th ed. New York: Freeman 2002; B.J. Van den Eynde and P. van der Bruggen, Curr Opin. Immunol. 9:684-693, 1997. Adapteeritud: The Biology of Cancer, 2007.
@@ -363,7 +381,7 @@ Tabel: R.A. Goldsby et al., Immunology, 5th ed. New York: Freeman 2002; B.J. Van
 - 24D3 lümfotsüütidega transplanteeritud hiirtes kasvab küll teine samasugune fibrosarkoom (CMS5, kõige parempoolne pilt) aga mitte Meth A (keskel).
 
 
-```{r metha}
+```{r, out.width='55%'}
 library(gtable)
 library(grid)
 g <- gtable(widths = unit(rep(1,3),"null"), heights = unit(.5,"null"))
@@ -382,9 +400,10 @@ T. Matsutake and P.K. Srivastava, 2001. PNAS98:3992-3997. The immunoprotective M
 
 ---
 
-## Inimese GI vähi mutatsioonide immunogeensus
+### Inimese GI vähi mutatsioonide immunogeensus
 
-```{r somatic_mut_immunogenicity}
+.pull-left[
+```{r}
 # Immunogenicity of somatic mutations in human gastrointestinal cancers
 # Originally published in Science Express on 29 October 2015, doi: 10.1126/science.aad1253
 # Science 11 December 2015: vol. 350 no. 6266 1387-1390
@@ -393,64 +412,27 @@ T. Matsutake and P.K. Srivastava, 2001. PNAS98:3992-3997. The immunoprotective M
 # crc <- tdist %>% html_node("#table-1") %>% html_table(header = TRUE) %>% dplyr::select(1:3,8:11)
 # colnames(crc) <- c("ID","Age/sex","Tumor","Mutated prot","Aa change","T cell type","% in tumor")
 load("data/CRC_immunogenicity.RData")
-knitr::kable(crc)
+tab <- knitr::kable(crc, format = 'html')
+kableExtra::kable_styling(tab, "striped", position = "left", font_size = 8)
 ```
 
-.footer[
-Tabel: Mutation-reactive T cells in metastatic GI cancers [Tran, et al., (2015)](http://www.sciencemag.org/content/350/6266/1387/T1.expansion.html) Immunogenicity of somatic mutations in human gastrointestinal cancers. Science 11 December 2015: Vol. 350 no. 6266 pp. 1387-1390
 ]
+
+.pull-right[
+- Tabel: Mutation-reactive T cells in metastatic GI cancers [Tran, et al., (2015)](http://www.sciencemag.org/content/350/6266/1387/T1.expansion.html) Immunogenicity of somatic mutations in human gastrointestinal cancers. Science 11 December 2015: Vol. 350 no. 6266 pp. 1387-1390]
 
 ---
 
 ## Immuunrakud kasvaja mikrokeskonnas
 
-.pull-left[
-
-```{r}
-knitr::include_graphics("http://www.nature.com/mt/journal/v18/n2/images/mt2009228f2.gif")
+```{r, out.width='80%'}
+knitr::include_graphics("figures/JCI57099.f1.jpg")
 ```
 
-]
-
-.pull-right[
-
-- T lümfotsüüdid
-- B lümfotsüüdid
-- NK ja NKT rakud
-- makrofaagid
-- müeloidset päritolu suppressor-rakud
-- dendriitrakud
-- neutrofiilid
-]
+- T lümfotsüüdid, B lümfotsüüdid, NK ja NKT rakud, makrofaagid, müeloidset päritolu suppressor-rakud, dendriitrakud, neutrofiilid
 
 .footer[
-Pilt www.nature.com
-]
-
----
-
-## NKG2D ja ligandid
-NKG2D on aktivatsiooniretseptoriks NK rakkudel -- aktiveerivad *killer immunoglobulin-like receptor* (KIR) molekulid (NKR-P1, CD94/NKG2(A/B))
-
-.pull-left[
-
-```{r}
-knitr::include_graphics("http://www.nature.com/nri/journal/v7/n9/images/nri2144-f1.jpg")
-```
-
-]
-
-.pull-right[
-
-- NKG2D ekspr. vastusena stressile või DNA kahjustustele, samuti konstitutiivselt vähirakkudel.
-- NKG2D ligandid on MICA/B ja RAE valgud
-- MICA seostumine NKG2D-le aktiveerib NK rakud
-- RAE üleekspressioon hiires muudab need loomad vastuvõtlikumaks kartsinogeneesile.
-- Inimese kartsinoomid ja melanoomid üleekspresseerivad lahustuvat MICA ligandi (tekib proteolüütilise lõikamise teel, *shedding*)
-]
-
-.footer[Pilt: Nature Immunology.
-
+Pilt: https://www.jci.org/articles/view/57099 
 ]
 
 ---
@@ -465,6 +447,32 @@ NK vastust vähile reguleerib signaalide tasakaal
 ```{r}
 knitr::include_graphics("http://www.frontiersin.org/files/Articles/38940/fimmu-04-00076-HTML/image_m/fimmu-04-00076-g001.jpg")
 ```
+
+---
+
+## NK rakud tapavad stressis rakke
+NKG2D on aktivatsiooniretseptoriks NK rakkudel - aktiveerivad *killer immunoglobulin-like receptor* (KIR) molekulid (NKR-P1, CD94/NKG2(A/B))
+
+.pull-left[
+
+```{r, out.width='90%'}
+knitr::include_graphics("http://www.nature.com/nri/journal/v7/n9/images/nri2144-f1.jpg")
+```
+
+]
+
+.pull-right[
+
+- NKG2D ekspr. vastusena stressile või DNA kahjustustele, samuti konstitutiivselt vähirakkudel
+- NKG2D ligandid on MICA/B ja RAE valgud
+- MICA seostumine NKG2D-le aktiveerib NK rakud
+- RAE üleekspressioon hiires muudab need loomad vastuvõtlikumaks kartsinogeneesile.
+- Inimese kartsinoomid ja melanoomid üleekspresseerivad lahustuvat MICA ligandi (tekib proteolüütilise lõikamise teel, *shedding*)
+]
+
+.footer[Pilt: Nature Immunology.
+
+]
 
 ---
 
@@ -553,9 +561,11 @@ Andmed: Long-Term Trends in Cancer Mortality in the United States, 1930 –1998.
 ## Kaks peamist trendi vähisuremuses
 Vähi suremus peegeldab ravi efektiivsust
 
-- **Suremus osadesse kasvajatüüpidesse on vähenenud**. Tingituna näiteks mao- ja maksakasvajate puhul paremast toiduohutusest (*H. pylori*) ja emakakaela (ja soole-) kasvajate puhul sõeltestimistest.
-- **Mitmed põhilised kasvajatüübid on jäänud resistentseks** enamuse kasutatavate ravimeetodite suhtes.
-- Enamus laialt kasutatavatest vähiravimitest on kasutusele võetud juba enne 1970-ndaid aastaid, mil puudus arusaam vähi molekulaarsetest alustest.
+- **Suremus osadesse kasvajatüüpidesse on vähenenud**. Tingituna näiteks mao- ja maksakasvajate puhul paremast toiduohutusest (*H. pylori*) ja emakakaela (ja soole-) kasvajate puhul sõeltestimistest
+
+- **Mitmed põhilised kasvajatüübid on jäänud resistentseks** enamuse kasutatavate ravimeetodite suhtes
+
+- Enamus laialt kasutatavatest vähiravimitest on kasutusele võetud juba enne 1970-ndaid aastaid, mil puudus arusaam vähi molekulaarsetest alustest
 
 ---
 
@@ -585,7 +595,7 @@ Pilt: [PSA screening has also significantly impacted prostate cancer mortality](
 
 ---
 
-```{r}
+```{r, out.width='55%'}
 knitr::include_graphics("http://blogs-images.forbes.com/benjamindavies/files/2015/11/cancermortality.png")
 ```
 
