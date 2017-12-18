@@ -1045,4 +1045,5 @@ class:inverse, middle
 
 ]
 
-Github: [tpall/immuunsus-ravim](https://github.com/tpall/immuunsus-ravim) 
+Onkobioloogia loeng: https://onkobioloogia.credibleinterval.ee
+Github: [tpall/immuunsus-ravim](https://github.com/tpall/immuunsus-ravim)
